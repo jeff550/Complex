@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <script src="chart.script.js"></script>
+    <header>
+        <h1>Welcome To Complex Kicks </h1>
+    </header>
+    <h2>Top Of The Week</h2>
+    <main>
+        <div class="shoe-container">
+            <div class="shoe-item">
+                <img src="jordan.webp" alt="militaly blue" height="1600"
+                 width="900">
+                <h2>Jordan 1 mid DO5</h2>
+                <p>Price: $100</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="jordan Dior.webp" alt="jordan retro High Dior" 
+                height="1024"
+                width="682">
+                <h2>Jordan 1 Retro High Dior</h2>
+                <p>Price: $120</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="jordan.jpeg" alt="jordan 1" height="300"
+                width="168">
+                <h2>Jordan 1 Elevate High Top</h2>
+                <p>Price: $80</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; complex kicks</p>
+    </footer>
+
+    <h3 id="kicks1">Walk The Talk</h3>
+    <p1>
+        Come to us to get the best and most
+         comfortable walking experiences. #comfortablewalking
+    </p1 magin-right 10px>
+
+    <img src="dunks.webp" alt="low dunks" height="500"width="900">
+    <figcaption>Nike Dunks Low </figcaption>
+
+   <p2>At Complex Kicks, we believe that the perfect pair of shoes
+     is more than just an accessory—it's a statement of style, comfort,
+      and confidence. Our collection is crafted from premium materials,
+       blending cutting-edge fashion with unparalleled durability.
+        Whether you're hitting the streets in sleek sneakers,
+         enjoying a casual day in comfy loafers, or making an 
+         impression with polished formal shoes, we’ve got you covered.
+          Our shoes are designed to support your lifestyle, offering 
+          the perfect balance of comfort and elegance. Available in a
+           variety of sizes, colors, and designs, each pair is made to 
+           suit your unique needs. Step into a world of style and walk
+            with confidence every day!
+        </p2>
+
+           <hr>
+
+    <h4>Get In Touch</h4>
+
+    <section class="store-address">
+        <h2>Our Address</h2>
+        <p>Complex Kicks Inc.</p>
+        <p>14th Avenue East,</p>
+        <p>Seattle, Washington(WA), 98118, USA</p>
+        
+        <h3>Contact Us</h3>
+        <p>Phone: (254)112854350</p>
+        <p>Email: complexkicks@gmail.com</p>
+
+        <h3>Working Hours</h3>
+        <p>Monday - Friday: 9 AM - 6 PM</p>
+        <p>Saturday: 10 AM - 4 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3>Find Us on the Map</h3>
+        <a href="https://www.google.com/maps/place/Seattle, Washington(WA), 98118" target="_blank">
+            <button>View on Google Maps</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; complexkicks Inc.</p>
+    </footer>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(240, 216, 3, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .checkout-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Checkout Form</h2>
+    <form action="/process_order" method="POST" class="checkout-form">
+        
+        <div class="form-group">
+            <label for="name"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required placeholder="Complex@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="address"><i class="fa fa-address-card"></i> Address</label>
+            <input type="text" id="address" name="address" required placeholder="Seattle, Washington(WA),98118, USA">
+        </div>
+
+        <div class="form-group">
+            <label for="city"><i class="fa fa-city"></i> City</label>
+            <input type="text" id="city" name="city" required placeholder="Seattle">
+        </div>
+
+        <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required placeholder="Washington">
+        </div>
+
+        <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" required placeholder="10001">
+        </div>
+
+        <h3>Payment Information</h3>
+
+        <div class="form-group">
+            <label for="card-name"><i class="fa fa-user"></i> Name on Card</label>
+            <input type="text" id="card-name" name="card-name" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="card-number"><i class="fa fa-credit-card"></i> Credit Card Number</label>
+            <input type="text" id="card-number" name="card-number" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="exp-month"><i class="fa fa-calendar-alt"></i> Exp Month</label>
+            <input type="text" id="exp-month" name="exp-month" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="exp-year"><i class="fa fa-calendar-alt"></i> Exp Year</label>
+            <input type="text" id="exp-year" name="exp-year" required placeholder="">
+        </div>
+
+        <input type="submit" value="Place Order">
+
+    </form>
+</div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <script src="checkout.js"></script>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>At Complex kicks, we offer a curated selection of 
+                stylish and comfortable footwear for every occasion. 
+                Our knowledgeable staff is dedicated to providing exceptional customer
+                 service to help you find the perfect pair. Step into fashion and comfort
+                  with us—your feet will thank you!</p>
+          </div>
+          
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: complexkicks254@gmail.com</p>
+            <p>Phone: +254112854350</p>
+            <p>Address: Seattle, Washington(WA), 98118, USA</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; complexkicks, walk the talk.</p>
+        </div>
+      </footer>
+      
+      <script src="chart.script.js"></script>
+</body>
+</html>
